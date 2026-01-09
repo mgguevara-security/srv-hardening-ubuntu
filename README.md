@@ -90,7 +90,7 @@ sudo ufw --force enable
 # 3. Limpieza de servicios innecesarios
 sudo apt autoremove -y
 
-echo "Hardening completado"
+echo "Hardening completo"
 
 ![ejecución de hardening](./imagen/6.png)
 
@@ -110,6 +110,7 @@ La ejecución de este proyecto demuestra la importancia de establecer una base d
 **Gestión de parches:** Se garantizó la integridad del sistema operativo mediante la actualización automatizada de paquetes críticos.
 **Eficiencia operativa:** El uso de Bash Scripting permite aplicar estas mismas reglas de hardening en cualquier servidor Ubuntu de forma rápida y sin errores manuales.
 Este servidor ahora cuenta con una configuración robusta, listo para recibir capas de seguridad adicionales en futuras auditorías.
+
 
 
 
