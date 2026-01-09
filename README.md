@@ -30,11 +30,14 @@ Este proyecto consiste en el despliegue de un servidor **Ubuntu Server 24.04 LTS
 
 
 
+
 ## Fases del Proyecto
 
 
 
+
 1. **Aprovisionamiento:** Configuración de VM con 2GB RAM, 2 CPUs y 25GB de almacenamiento.
+
 
 
 
@@ -43,13 +46,17 @@ Este proyecto consiste en el despliegue de un servidor **Ubuntu Server 24.04 LTS
 
 
 
+
 2. **Instalación:** Despliegue de SO base (en proceso).
+
 
 
 
 ![Configuración de la VM](./imagen/2.png)
 
+
 ![Configuración de la VM](./imagen/3.png)
+
 
 
 
@@ -58,12 +65,14 @@ Este proyecto consiste en el despliegue de un servidor **Ubuntu Server 24.04 LTS
 Actualización de paquetes:
 **comando utilizados:** sudo apt update && sudo apt upgrade -y
 
+
 ![ejecución de hardening](./imagen/4.png)
 
-**Automatización de reglas de firewall**
-creación de archivo:
 
-nano hardening.sh y pegamos el siguiente bash
+**Automatización de reglas de firewall**
+ 
+ Con el comando **nano hardening.sh** se crea el archivo donde se colocara el siguiente BASH
+
 
 #!/bin/bash
 echo "Iniciando Hardening..."
@@ -84,10 +93,14 @@ echo "Hardening completado"
 
 ![ejecución de hardening](./imagen/6.png)
 
+
 4. **Validación:** 
+
 Auditoría de puertos y servicios activos.
 
+
 ![validación de hardening](./imagen/5.png)
+
 
 5. **Conclusión:**
 
@@ -96,6 +109,7 @@ La ejecución de este proyecto demuestra la importancia de establecer una base d
 **Gestión de parches:** Se garantizó la integridad del sistema operativo mediante la actualización automatizada de paquetes críticos.
 **Eficiencia operativa:** El uso de Bash Scripting permite aplicar estas mismas reglas de hardening en cualquier servidor Ubuntu de forma rápida y sin errores manuales.
 Este servidor ahora cuenta con una configuración robusta, listo para recibir capas de seguridad adicionales en futuras auditorías.
+
 
 
 
